@@ -14,7 +14,7 @@ labels:
 app: demo-ui
 spec:
 containers:
-- image: nayanbecker/demo-ui:05379150fefa63d704abd7eace084fd58d77ab76
+- image: nayanbecker/demo-ui:5939dad28b6ee836c25d704c83ba21818a73acb6
 name: demo-ui
 ports:
 - containerPort: 80
