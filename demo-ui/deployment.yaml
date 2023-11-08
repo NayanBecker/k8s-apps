@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: demo-ui
+  name: demo-ui
 spec:
-replicas: 1
-revisionHistoryLimit: 3
-selector:
-matchLabels:
-app: demo-ui
-template:
-metadata:
-labels:
-app: demo-ui
-spec:
-containers:
-- image: nayanbecker/demo-ui:5939dad28b6ee836c25d704c83ba21818a73acb6
-name: demo-ui
-ports:
-- containerPort: 80
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: demo-ui
+  template:
+    metadata:
+      labels:
+        app: demo-ui
+  spec:
+    containers:
+    - image: nayanbecker/demo-ui:5939dad28b6ee836c25d704c83ba21818a73acb6
+      name: demo-ui
+      ports:
+      - containerPort: 80
